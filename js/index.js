@@ -10,7 +10,7 @@ funBusHeader.addEventListener('mouseover', function (){
 //ALERT WHEN FIRST SIGN UP BUTTON IS PRESSED
 const buttons = document.querySelector('.btn');
 buttons.addEventListener('click', function (e){
-    alert('SIGGNNNN UPPPPPP')
+    TweenMax.to(".btn", 0.5, {scale: 1.4, ease: Bounce.easeOut });
     e.stopPropagation();
 })
 
@@ -32,7 +32,7 @@ middleImage.addEventListener('dblclick', function (e){
 //NAV PREVENT DEFAULT
 const NavPrevent = document.querySelector('.nav');
 NavPrevent.addEventListener('click', function(event){
- console.log(`NAV button was clicked without refresh!`);
+ alert(`NAV button was clicked without refresh!`);
  
   event.preventDefault();
 });
@@ -52,13 +52,13 @@ pressedKey.addEventListener('keydown', function (e){
 //ALERT WHEN MOUSE OUT OF IMAGE
 const mouseout = document.querySelector('.adventureIMG')
 mouseout.addEventListener('mouseout', function(){
-    alert(`MOUSE OUT`)
+    TweenMax.to(".adventureIMG", 1, {scale: 1.2, ease: Bounce.easeOut });
 })
 
 //MOUSE ENTER
 const mouseEnter = document.querySelector('.funImg')
 mouseEnter.addEventListener('mouseenter', function(){
-    alert('MOUSE ENTER')
+    TweenMax.to(".funImg", 1, {rotation: 360, ease: Bounce.easeOut });
 })
 
 //MOUSE MOVE
