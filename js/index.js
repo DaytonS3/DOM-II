@@ -18,7 +18,7 @@ buttons.addEventListener('click', function (e){
 const letsGo = document.querySelector('.letsGo');
 letsGo.addEventListener('click', function (e){
     alert('LETTSSS GOOOOOOOO')
-    
+    TweenMax.to(".letsGo", 1, {x: 100, ease: Bounce.easeOut });
 })
 
 
@@ -32,8 +32,8 @@ middleImage.addEventListener('dblclick', function (e){
 //NAV PREVENT DEFAULT
 const NavPrevent = document.querySelector('.nav');
 NavPrevent.addEventListener('click', function(event){
- alert(`NAV button was clicked without refresh!`);
- // This will prevent the form from submitting to action_page.php
+ console.log(`NAV button was clicked without refresh!`);
+ 
   event.preventDefault();
 });
 
