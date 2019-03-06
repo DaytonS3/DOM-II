@@ -17,7 +17,7 @@ buttons.addEventListener('click', function (e){
 //ALERT WHEN H2 LET'S GO IS PRESSED
 const letsGo = document.querySelector('.letsGo');
 letsGo.addEventListener('click', function (e){
-    alert('LETTSSS GOOOOOOOO')
+    
     TweenMax.to(".letsGo", 1, {x: 100, ease: Bounce.easeOut });
 })
 
@@ -66,3 +66,21 @@ const wheel = document.querySelector('.d')
 wheel.addEventListener('mousemove', function(){
     wheel.classList.toggle('red');
 })
+
+
+//MOUSE UP
+const mouseup = document.querySelector('.footer');
+mouseup.addEventListener('mouseup', function (ev){
+    alert(`mouse up alert`)
+})
+
+//MouseDown
+const mousedown = document.querySelector('.topImg')
+mousedown.addEventListener('mousedown', function(){
+    TweenMax.to(".topImg", 1, {scale: 1.2, ease: Bounce.easeOut });
+})
+
+
+
+
+
